@@ -68,6 +68,18 @@ async def duck(ctx):
     '''duck komutunu çağırdığımızda, program ordek_resmi_urlsi_al fonksiyonunu çağırır.'''
     image_url = get_duck_image_url()
     await ctx.send(image_url)
+def get_fox_image_url():  
+    
+    url = ' https://randomfox.ca/floof/'
+    res = requests.get(url)
+    data = res.json()
+    return data['url']
+
+@bot.command('fox')
+async def duck(ctx):
+    '''fox komutunu çağırdığımızda, program tilki_resmi_urlsi_al fonksiyonunu çağırır.'''
+    image_url = get_fox_image_url()
+    await ctx.send(image_url)
 
 
 bot.run("token girin")
