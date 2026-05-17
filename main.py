@@ -40,6 +40,24 @@ async def joined(ctx, member: discord.Member):
 @bot.command()
 async def Yardım(ctx):
     await ctx.send("komutlar: merhaba,heh,joined,toplama")
+@bot.command() 
+async def Bilgi(ctx) :
+    await ctx.send("bu bot geri dönüşüm hakkında bigi verir.Geri dönüşüm atıkların yeniden işlenerek yeni ürünlere dönüştürülmesidir.") 
+
+@bot.command()
+async def glass(ctx):
+    await ctx.send("*Cam 4000 yılda yok olur neredeyse ölümsüzlük iksiri içmiş")
+
+
+@bot.command()
+async def paper(ctx):
+    await ctx.send("*kağıt 5-7 kez dönüştürülebilir adeta hiç bir zaman ölmeyen  filmlerdeki kötüler gibi")
+
+
+@bot.command()
+async def metal(ctx):
+    await ctx.send("*metal geri dönüştüğünde büyük miktarda enerji sağlar.")
+ 
 
 
 
